@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "VYPR Sneaker Brand"
+version = "1.0.0"
+id = "artifacts/vypr"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20340
+
+[services.development]
+run = "pnpm --filter @workspace/vypr run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/vypr", "run", "build" ]
+publicDir = "artifacts/vypr/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20340"
+BASE_PATH = "/"

@@ -1,0 +1,65 @@
+Role & Tech Stack:
+Act as an expert frontend developer and creative technologist. Build a highly immersive, single-page scroll-driven landing page for a premium sneaker brand ("VYPR"). Use React, Tailwind CSS, and Framer Motion. The entire website must feel like a seamless cinematic experience where scrolling triggers bold visual transitions. Use Lucide React for UI icons.
+
+Overall Aesthetic & Typography:
+
+Typography: Ultra-bold, massive compressed sans-serif fonts (like Impact or Anton) that stretch across the screen. Text elements should feel tightly integrated with the product imagery.
+
+Visual Style: High-contrast, sleek, and premium. The products must look like they are floating with subtle dynamic depth shadows to create a 3D effect.
+
+Theme/Tone: The site primarily defaults to a dark, high-energy aesthetic with vibrant color-blocked sections. However, include a toggle for a clean, professional light mode. In light mode, ensure the typography remains razor-sharp and dark against minimalist backgrounds, keeping the layout sophisticated.
+
+Interactive Scroll Sections (The Video Flow):
+Configure a scroll container where each section takes up 100vh and triggers smooth, animated transitions:
+
+Section 1: The Color-Block Hero
+
+A split-second layout that shifts backgrounds smoothly (Yellow, Purple, Orange, Teal, Beige) as different featured shoes animate into the center view.
+
+Left side has a clean navigation block, product subtitle ("VYPR - VOLT RUNNER"), and a short description block.
+
+Right side features a "DISCOVER IT →" call to action.
+
+Section 2: The Portal Zoom (Glasses Transition)
+
+As the user scrolls, transition into a massive visual overlay (like looking through vibrant sunglass lenses) acting as a masking portal.
+
+Inside the portal, a shoe floats over a dynamic, high-definition motion graphic background (e.g., swirling water or vortex loops).
+
+Centered stark text fades in: "ENTER THE DROP".
+
+Section 3: Cinematic Product Spotlights
+
+Continuous vertical scrolling takes the user through deep thematic backdrops:
+
+A dark marine setting with dramatic elements and the text "BORN OF THE DEEP".
+
+A stark, bright minimalist white background featuring a side profile shot and the branding "HYPERICE".
+
+A deep crimson/red background with a high-fashion, low-angle model shot overlayed with "WORN TO WIN".
+
+Section 4: The Speed Sequence
+
+A dark, smoky background featuring an athlete mid-sprint with neon/glowing shoe trails.
+
+As the runner moves across the screen, the large bold text "NOW YOU FLY" fades in and out.
+
+Section 5: The E-Commerce Grid
+
+The site smoothly resolves into a clean, dark-themed catalog layout titled "THE COLLECTION".
+
+A minimalist 3-column grid showing individual shoe cards with clean typography, prices (£189, £179, etc.), and standard "SHOP" buttons.
+
+Section 6: Email Capture & Footer
+
+A minimal card layout with a clean text input reading "Enter your email" and a sharp "NOTIFY ME" button, bounded by the text "JOIN THE DROP - Limited to 500 pairs".
+
+The page concludes with a massive footer block reading: "ENGINEERED TO FLY. BUILT TO DOMINATE." in huge lettering on the left, with standard clean navigation columns on the right. Include "Designed by Akash" in the bottom-left copyright area.
+
+Animations & Mechanics:
+
+Use Framer Motion's useScroll and useTransform to tie the background color changes, text fades, and image scaling directly to the user's scroll position.
+
+Ensure all background transitions feel fluid, not jarring.
+
+Hovering over buttons (like "SHOP" or "NOTIFY ME") should instantly invert their colors.
